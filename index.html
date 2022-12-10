@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" ;>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,intial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>array</title>
+  <style>
+  body{
+    background-color: black;
+    color: white;
+  }
+  .button {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 10px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 40px 0px;
+  width:135px;
+  cursor: pointer;
+}
+.container{
+  padding-top: 55px;
+ 
+  margin: 25px;
+}
+ul:hover{
+  background-color: black;
+}
+
+
+  </style>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h2>Filter ui cards via their profession</h2>
+     <br><br>
+      <div class="dropdown">
+        <button type="button" class="btn  dropdown-toggle"style="width:150px; padding:10px; background-color: black; color: white; border-color: white" data-bs-toggle="dropdown">
+          Profession
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Developer</a></li>
+          <li><a class="dropdown-item" href="#">Admin</a></li>
+          
+        </ul>
+      </div>
+      <br><br>
+      <div class="card"style="background-color: black; border-color: white; width:450px  ">
+        <div class="card-body">1.&nbsp&nbsp&nbsp Name : John &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp  Profession: Developer  &nbsp&nbsp&nbsp  Age: 18&nbsp&nbsp&nbsp</div>
+      </div>
+      <br>
+      <div class="card"style="background-color: black; border-color: white; width:450px">
+        <div class="card-body">2.&nbsp&nbsp&nbsp Name : Jack &nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp Profession: Developer  &nbsp&nbsp&nbsp  Age: 20&nbsp&nbsp&nbsp</div>
+      </div>
+      <br>
+      <div class="card"style="background-color: black; border-color: white; width:450px">
+        <div class="card-body">3.&nbsp&nbsp&nbsp Name : Karen &nbsp&nbsp&nbsp&nbsp&nbsp Profession: Admin &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp  Age: 19&nbsp&nbsp&nbsp</div>
+      </div>
+      
+      
+      <button class="button">Filter</button>
+      
+      
+
+    </div>
+    
+      
+
+  </body>
+  <script>
+    let arr = [{id:1,name:"john",age:"18",profession:"developer"},{id:2, name:"jack",age:"20", profession:"developer"},{id:3, name:"karen", age:"19",profession:"admin"}]
+    arr.forEach(function(element){
+      console.log(element)
+    })
+</html>
